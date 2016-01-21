@@ -1,0 +1,110 @@
+#Active voice
+be/indic/pres + _v_/gerund/pres = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + _v_/part/past = tense=PRESENT, aspect=PERFECTIVE
+have/indic/pres + be/part/past + _v_/gerund/pres = tense=PRESENT, aspect=PERFECTIVE_PROGRESSIVE
+
+be/indic/past + _v_/gerund/pres = tense=PAST, aspect=PROGRESSIVE
+have/indic/past + _v_/part/past = tense=PAST, aspect=PERFECTIVE
+have/indic/past + be/part/past + _v_/gerund/pres = tense=PAST, aspect=PERFECTIVE_PROGRESSIVE
+
+will/indic/pres + _v_/infin/pres = tense=FUTURE, aspect=NONE
+will/indic/pres + _v_/indic/pres = tense=FUTURE, aspect=NONE
+be/indic/pres + go/gerund/pres + to + _v_/infin/pres = tense=FUTURE, aspect=NONE
+will/indic/pres + be/infin/pres + _v_/gerund/pres = tense=FUTURE, aspect=PROGRESSIVE
+be/indic/pres + go/gerund/pres + to + be/infin/pred + _v_/infin/pres = tense=FUTURE, aspect=PROGRESSIVE
+will/indic/pres + have/infin/pres + _v_/part/past = tense=FUTURE, aspect=PERFECTIVE
+will/indic/pres + have/infin/pres + be/part/past +  _v_/gerund/pres = tense=FUTURE, aspect=PERFECTIVE_PROGRESSIVE
+
+#Passive voice
+be/indic/pres + _v_/part/past = tense=PRESENT, aspect=NONE
+be/indic/pres + be/gerund/pres + _v_/part/past = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + be/part/past + _v_/part/past = tense=PRESENT, aspect=PERFECTIVE
+
+be/indic/past + _v_/part/past = tense=PAST, aspect=NONE
+be/indic/past + be/gerund/pres + _v_/part/past = tense=PAST, aspect=PROGRESSIVE
+have/indic/past + be/part/past + _v_/part/past = tense=PAST, aspect=PERFECTIVE
+
+will/indic/pres + be/infin/pres + _v_/part/past = tense=FUTURE, aspect=NONE
+be/indic/pres + go/gerund/pres + to + be/infin/pres + _v_/part/past = tense=FUTURE, aspect=NONE
+will/indic/pres + have/infin/pres + be/part/past + _v_/part/past = tense=FUTURE, aspect=PERFECTIVE
+
+#Verbs preceeded by a modal auxiliar
+have/indic/pres + to + _v_/infin/pres = tense=PRESENT, aspect=NONE
+have/indic/pres + to + be/infin/pres + _v_/gerund/pres = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + to + have/infin/pres + _v_/part/past = tense=PRESENT, aspect=PERFECTIVE
+have/indic/pres + to + have/infin/pres + be/part/past + _v_/gerund/pres = tense=PRESENT, aspect=PERFECTIVE_PROGRESSIVE
+
+have/indic/past + to + _v_/infin/pres = tense=PAST, aspect=NONE
+have/indic/past + to + be/infin/pres + _v_/gerund/pres = tense=PAST, aspect=PROGRESSIVE
+
+will/indic/pres + have/infin/pres + to + _v_/infin/pres = tense=FUTURE, aspect=NONE
+will/indic/pres + have/infin/pres + to + be/infin/pres + _v_/gerund/pres = tense=FUTURE, aspect=PROGRESSIVE
+
+(must|should|may|might|can|could|would) + _v_/infin/pres = tense=NONE, aspect=NONE
+(must|should|may|might|can|could|would) + be/infin/pres + _v_/gerund/pres = tense=NONE, aspect=PROGRESSIVE
+(must|should|may|might|can|could|would) + have/infin/pres +_v_/part/past = tense=NONE, aspect=PERFECTIVE
+(must|should|may|might|can|could|would) + have/infin/pres + been/part/past +_v_/gerund/pres = tense=NONE, aspect=PERFECTIVE_PROGRESSIVE
+(must|should|may|might|can|could|would) + be/infin/pres + _v_/part/past = tense=PAST, aspect=NONE
+
+#do/did
+do/indic/past + _v_/infin/pres = tense=PAST, aspect=NONE
+do/indic/pres + _v_/infin/pres = tense=PRESENT, aspect=NONE
+
+#Infinitive
+to + _v_/infin/pres = tense=INFINITIVE, aspect=NONE
+to + _v_/indic/pres = tense=INFINITIVE, aspect=NONE
+to + be/infin/pres + _v_/gerund/pres = tense=INFINITIVE, aspect=PROGRESSIVE
+to + have/infin/pres + _v_/part/past = tense=INFINITIVE, aspect=PERFECTIVE
+to + have/infin/pres + be/part/past + _v_/gerund/pres = tense=INFINITIVE, aspect=PERFECTIVE_PROGRESSIVE
+
+#VP containing one word
+_v_/gerund/pres = tense=PRESPART, aspect=NONE
+_v_/indic/pres = tense=PRESENT, aspect=NONE
+_v_/indic/past = tense=PAST, aspect=NONE
+_v_/part/past = tense=PASTPART, aspect=NONE
+
+#VP in two pieces (e.g. has until now been described)
+be/part/past + _v_/gerund/pres = tense=NONE, aspect=PERFECTIVE_PROGRESSIVE
+be/part/past + _v_/part/past = tense=NONE, aspect=PERFECTIVE
+
+#prespart
+_v_/gerund/pres = tense=PRESPART, aspect=NONE
+
+#adjective
+be/indic/pres + _a_ = tense=PRESENT, aspect=NONE
+be/indic/pres + be/gerund/pres + _a_ = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + be/part/past + _a_ = tense=PRESENT, aspect=PERFECTIVE
+
+be/indic/past + _a_ = tense=PAST, aspect=NONE
+be/indic/past + be/gerund/pres + _a_ = tense=PAST, aspect=PROGRESSIVE
+have/indic/past + be/part/past + _a_ = tense=PAST, aspect=PERFECTIVE
+
+will/indic/pres + be/infin/pres + _a_ = tense=FUTURE, aspect=NONE
+will/indic/pres + have/infin/pres + be/part/past + _a_ = tense=FUTURE, aspect=PERFECTIVE
+
+
+#noun
+be/indic/pres + _n_ = tense=PRESENT, aspect=NONE
+be/indic/pres + be/gerund/pres + _n_ = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + be/part/past + _n_ = tense=PRESENT, aspect=PERFECTIVE
+
+be/indic/past + _n_ = tense=PAST, aspect=NONE
+be/indic/past + be/gerund/pres + _n_ = tense=PAST, aspect=PROGRESSIVE
+have/indic/past + be/part/past + _n_ = tense=PAST, aspect=PERFECTIVE
+
+will/indic/pres + be/infin/pres + _n_ = tense=FUTURE, aspect=NONE
+will/indic/pres + have/infin/pres + be/part/past + _n_ = tense=FUTURE, aspect=PERFECTIVE
+
+
+#preposition
+be/indic/pres + _p_ = tense=PRESENT, aspect=NONE
+be/indic/pres + be/gerund/pres + _p_ = tense=PRESENT, aspect=PROGRESSIVE
+have/indic/pres + be/part/past + _p_ = tense=PRESENT, aspect=PERFECTIVE
+
+be/indic/past + _p_ = tense=PAST, aspect=NONE
+be/indic/past + be/gerund/pres + _p_ = tense=PAST, aspect=PROGRESSIVE
+have/indic/past + be/part/past + _p_ = tense=PAST, aspect=PERFECTIVE
+
+will/indic/pres + be/infin/pres + _p_ = tense=FUTURE, aspect=NONE
+will/indic/pres + have/infin/pres + be/part/past + _p_ = tense=FUTURE, aspect=PERFECTIVE
+
