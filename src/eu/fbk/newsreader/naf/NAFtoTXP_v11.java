@@ -267,8 +267,8 @@ public class NAFtoTXP_v11 {
 			
 			List<String> termIdCandMainVerb = MainVerb.detect_main_verbs(nafFile);
 			
-			HashMap<String,String> listConnectives = AddConnectivesClasses.getListConnectives(nafFile);
-			
+			//HashMap<String,String> listConnectives = AddConnectivesClasses.getListConnectives(nafFile);
+			HashMap<String,String> listConnectives = new HashMap<String,String> ();
 			
 			int lineNumber = -1;
 			int indLine = 0;
